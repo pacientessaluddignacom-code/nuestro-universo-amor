@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#020006">
+<title>NUESTRO UNIVERSO AMOR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <section id="intro" class="screen active">
+    <div class="intro-card">
+      <div class="intro-title">NUESTRO<br>UNIVERSO AMOR</div>
+      <div class="intro-art" aria-hidden="true"><span class="i-heart">♥</span><span class="i-star">✦</span><span class="i-star i2">✦</span></div>
+      <div class="intro-sub">PARA ANGIE · JAZ</div>
+      <p class="intro-poem">Un pequeño universo hecho para guardar<br>todo lo bonito que encuentro en ti.</p>
+      <button id="enterBtn" type="button">ENTRAR A NUESTRO UNIVERSO</button>
+      <div class="hint">Toca · desliza · gira · explora</div>
+    </div>
+  </section>
+
+  <section id="space" class="screen" aria-hidden="true">
+    <canvas id="gl"></canvas>
+    <div id="scene" aria-label="Universo interactivo">
+      <div class="nebula n1"></div><div class="nebula n2"></div><div class="nebula n3"></div>
+      <div id="orbitWords"></div>
+      <div id="stars2d"></div>
+      <div id="cards"></div>
+      <div id="characters"></div>
+      <div id="tulips"></div>
+      <div id="poemLayer"></div>
+      <div id="heartHit" role="button" aria-label="Tocar corazón"><div class="heart-aura"></div></div>
+      <div id="heartMessage">TE QUIERO ANGIE</div>
+      <div id="toast"></div>
+      <div class="top-title">NUESTRO UNIVERSO AMOR</div>
+      <div class="top-sub">ANGIE · JAZ <span>∞</span> ALONSO</div>
+      <div id="controls">
+        <button id="musicBtn" type="button" aria-label="Música">♫</button>
+        <button id="centerBtn" type="button" aria-label="Centrar universo">◎</button>
+        <button id="vrBtn" type="button" aria-label="Activar movimiento">◌</button>
+      </div>
+      <div id="help">DESLIZA PARA GIRAR · PINZA PARA ACERCAR · TOCA UNA ESTRELLA</div>
+    </div>
+  </section>
+</div>
+<audio id="music" preload="auto" loop src="assets/audio/a-donde-vamos.mp3"></audio>
+<script src="app.js"></script>
+</body>
+</html>
